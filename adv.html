@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokročilé vyhledávání</title>
+    <link rel="stylesheet" href="styles-adv.css">
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <h1>Pokročilé vyhledávání</h1>
+            <p class="description">Najděte přesně to, co hledáte, s pokročilými filtry.</p>
+            <form action="https://www.google.com/search" method="get" target="_blank">
+                <div class="form-group">
+                    <label for="exact-phrase">Přesná fráze</label>
+                    <input type="text" id="exact-phrase" name="q" placeholder="Např. 'historie České republiky'">
+                </div>
+
+                <div class="form-group">
+                    <label for="any-words">Slova, která se mohou objevit</label>
+                    <input type="text" id="any-words" name="q" placeholder="Např. cestování, dovolená">
+                </div>
+
+                <div class="form-group">
+                    <label for="exclude-words">Slova k vyloučení</label>
+                    <input type="text" id="exclude-words" name="q" placeholder="Např. pizza, rychlé občerstvení">
+                </div>
+
+                <div class="form-group">
+                    <label for="site">Konkrétní web</label>
+                    <input type="text" id="site" name="q" placeholder="Např. site:idnes.cz">
+                </div>
+
+                <div class="form-group">
+                    <label for="filetype">Typ souboru</label>
+                    <input type="text" id="filetype" name="q" placeholder="Např. filetype:pdf">
+                </div>
+
+                <button type="submit">Vyhledat</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
